@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Speed Typing</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav text-center">
+        <label for="difficiulty"><b>Select Difficiulty:</b></label>
+        <select name="difficiulty" class="difficiulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+
+      <div class="game-on-state text-center">
+        <h2 class="title">
+          <i class="fas fa-burn"></i> Speed Typing <i class="fas fa-burn"></i>
+        </h2>
+        <div class="time-score">
+          <h3 class="timer">Time Left: <span class="time-left">10</span></h3>
+          <h3>Score: <span class="score">0</span></h3>
+        </div>
+        <h1 class="word-to-type"></h1>
+        <input
+          type="text"
+          class="input-txt"
+          placeholder="Type Word...."
+          autofocus
+        />
+      </div>
+
+      <div class="game-over-state text-center">
+        <h1 class="ran-out">You ran out of time!</h1>
+        <h2 class="you-scored">You Scored: <span class="scored"></span></h2>
+        <button class="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
